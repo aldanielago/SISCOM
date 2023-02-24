@@ -1,0 +1,23 @@
+:root {
+    --dark: #06283D;
+    --primary: #1F85FF;
+    --secondary: #004AAD;
+    --primary-ligh: #E1CEB5;
+    --secondary-light: #FFE7CC;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
