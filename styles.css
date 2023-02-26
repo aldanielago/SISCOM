@@ -1,11 +1,12 @@
 :root {
-    --dark: #06283D;
-    --primary: #1F85FF;
-    --secondary: #004AAD;
-    --primary-ligh: #E1CEB5;
-    --secondary-light: #FFE7CC;
+    --dark-blue: #0D1B2A;
+    --secondary-blue: #1B263B;
+    --primary-blue: #415A77;
+    --light-blue: #778DA9;
+    --light-text-color: #E0E1DD;
 }
 
+/* Estilos generales */
 html {
     font-size: 62.5%;
 }
@@ -18,6 +19,42 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
+/* Estilos del header */
+.header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 6px;
+
+    width: 100%;
+    height: 190px;
+    padding: 10px;
+    min-width: 320px;
+
+    text-align: center;
+    background-image: linear-gradient(to right bottom, #0d1b2a, #253547, #3f5066, #5a6e87, #778da9);
+}
+
+.header__img {
+    margin-top: 12px;
+    width: 175px;
+    align-self: center;
+}
+
+.header__title {
+    align-self: center;
+    margin-top: 8px;
+
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 240px;
+
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--light-text-color);
+}
