@@ -12,21 +12,78 @@
     <title>SISCOM</title>
 </head>
 <body>
-    <nav>
-
+    <nav class="nav">
+        <a href="#header">
+            <img src="./assets/icon.png" alt="icon" class="nav__img">
+        </a>
+        <div class="nav__container">
+            <a href="#servicios" class="nav__container_item">Servicios</a>
+            <a href="#clientes" class="nav__container_item">Clientes</a>
+            <a href="#contacto" class="nav__container_item">Contactanos</a>
+        </div>
     </nav>
-    <header class="header">
+    <header id="header" class="header">
         <img src="./assets/logo-ligth.png" alt="icon" class="header__img">
         <h1 class="header__title">Nos ocupamos de su tecnología, para que usted pueda ocuparse de su negocio.</h1>
     </header>
     <main>
-        <section>
-            <h1>Nuestros servicios</h1>
-            
+        <section id="servicios" class="servicios">
+            <h2 class="servicios__title">Nuestros servicios</h2>
+            <div class="servicios__motherboards section_servicios">
+                <img src="https://images.unsplash.com/photo-1540761567564-d7839d2611b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="" class="servicios__img">
+                <div class="servicios__container_descripcion">
+                    <h3>Reparación de motherboards</h3>
+                    <p>Utilizamos herramientas y equipos de alta calidad para garantizar que tu placa madre quede en perfecto estado de funcionamiento.</p>
+                </div>
+            </div>
+            <div class="servicios__m_preventivo section_servicios">
+                <img src="https://images.unsplash.com/photo-1591238372408-8b98667c0460?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="img" class="servicios__img">
+                <div class="servicios__container_descripcion">
+                    <h3>Mantenimiento preventivo</h3>
+                    <p>¡No esperes a que algo falle! Programa un mantenimiento preventivo hoy y disfruta de la tranquilidad de saber que tus equipos están protegidos.</p>
+                </div>
+            </div>
+            <div class="servicios__m_correctivo section_servicios">
+                <img src="https://images.unsplash.com/photo-1550041473-d296a3a8a18a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80" alt="" class="servicios__img">
+                <div class="servicios__container_descripcion">
+                    <h3>Mantenimiento correctivo</h3>
+                    <p>Ofrecemos soluciones rápidas y eficientes para problemas como fallos en hardware, virus, errores de software y otros problemas comunes.</p>
+                </div>
+            </div>
         </section>
-        <section></section>
-        <section></section>
+        <section id="clientes">
+            <h2 class="servicios__title">Nuestros clientes</h2>
+
+        </section>
+        <section id="contacto">
+            <h2 class="servicios__title">Contactanos</h2>
+            <p>¿Necesitas ayuda con tus sistemas informáticos? ¡No busques más! Nuestro equipo de expertos está aquí para brindarte el soporte que necesitas.</p>
+            <p>Contáctanos hoy y permítenos ayudarte a mantener tus sistemas informáticos en óptimas condiciones.</p>
+            <h3>Ubiación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9449006557393!2d-74.20017178595616!3d4.603889343773092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9f1fac15c099%3A0xaa68978da0c7fcfe!2sServicio%20T%C3%A9cnico%20de%20Computadoras%20DYB%20Tecnology!5e0!3m2!1ses!2sco!4v1677431163447!5m2!1ses!2sco" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de la empresa" class="contacto__mapa"></iframe>
+            <a target="_blank" id="bottom-action-list-2" class="eOemif  oYxtQd" href="https://www.google.com/maps/dir//Servicio+T%C3%A9cnico+de+Computadoras+DYB+Tecnology/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9f1fac15c099:0xaa68978da0c7fcfe!2m2!1d-74.1979831!2d4.603884" data-tracking-element-type="5" jslog="// LINT.IfChange(PostCTAType)56039; track:impression,click" itemprop="hasMap" data-enable-ga="true" data-ga-prefix="bottom-action-list"><span class="DPvwYc xPRkMe" aria-hidden="true"></span><span>Indicaciones</span></a>
+            <div class="contacto__container">
+                <h3>Horario de apertura</h3>
+                <ul>
+                    <li>Domingos: 9:00 - 18:00</li>
+                    <li>Lunes - Jueves: 9:00 - 20:00</li>
+                    <li>Viernes: 9:00 - 18:00</li>
+                    <li>Sabado: Cerrado</li>
+                </ul>
+            </div>
+            <div class="contacto__container">
+                <h3>Escribenos por WhatsApp</h3>
+                <a href="https://wa.me/573506937721?text=Hola,%20estoy%20interesado%20en%20tus%20servicios">Enviar mensaje de WhatsApp</a>
+            </div>
+            <div class="contacto__container">
+                <h3>Mandanos un email</h3>
+                <a href="malito:sistemascsas@gmail.com">Enviar correo</a>
+            </div>
+
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
 </body>
 </html>
