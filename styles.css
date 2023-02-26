@@ -4,6 +4,7 @@
     --primary-blue: #415A77;
     --light-blue: #778DA9;
     --light-text-color: #E0E1DD;
+    --off-white: #faf8f7;
 }
 
 /* Estilos generales */
@@ -22,25 +23,53 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Estilos del nav */
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 8px;
+    height: 45px;
+    background-color: var(--light-blue);
+}
+
+.nav__img {
+    width: 30px;
+}
+
+.nav__container {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__container_item {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--light-text-color);
+}
+
 /* Estilos del header */
 .header {
     display: flex;
-    position: relative;
     flex-direction: column;
     gap: 6px;
 
     width: 100%;
-    height: 190px;
-    padding: 10px;
+    height: 230px;
     min-width: 320px;
+    padding-top: 45px;
 
     text-align: center;
     background-image: linear-gradient(to right bottom, #0d1b2a, #253547, #3f5066, #5a6e87, #778da9);
 }
 
 .header__img {
-    margin-top: 12px;
     width: 175px;
+    margin-top: 12px;
     align-self: center;
 }
 
@@ -57,4 +86,61 @@ body {
     font-size: 1.7rem;
     font-weight: 500;
     color: var(--light-text-color);
+}
+
+/* Estilos de la sección de servicios */
+.servicios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 12px;
+}
+
+.servicios__title {
+    color: var(--primary-blue);
+    font-size: 2.4rem;
+    margin: 6px;
+    text-align: center;
+}
+
+.section_servicios {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+
+    width: 90%;
+    border: 1px solid var(--light-blue);
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: var(--off-white);
+}
+
+.servicios__container_descripcion h3 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.servicios__container_descripcion p {
+    font-size: 1.1rem;
+    color: #778DA9;
+    line-height: 18px;
+}
+
+.servicios__img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Estilos de la sección de contacto */
+
+
+.QMbmRe {
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 56%;
+    width: 90%;
 }
