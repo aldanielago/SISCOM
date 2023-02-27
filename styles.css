@@ -1,10 +1,11 @@
 :root {
     --dark-blue: #0D1B2A;
     --secondary-blue: #1B263B;
-    --primary-blue: #415A77;
+    --primary-blue: rgb(65, 90, 119);
     --light-blue: #778DA9;
     --light-text-color: #E0E1DD;
     --off-white: #faf8f7;
+    --warm-black: #202623;
     --very-light-blue: rgb(119, 141, 169, 0.15);
 }
 
@@ -31,13 +32,13 @@ body {
     justify-content: space-between;
 
     width: 100%;
-    padding: 8px;
-    height: 45px;
+    padding: 8px 22px;
+    height: 55px;
     background-color: var(--light-blue);
 }
 
 .nav__img {
-    width: 30px;
+    width: 40px;
 }
 
 .nav__container {
@@ -62,7 +63,7 @@ body {
     width: 100%;
     height: 230px;
     min-width: 320px;
-    padding-top: 45px;
+    padding-top: 60px;
 
     text-align: center;
     background-image: linear-gradient(to right bottom, #0d1b2a, #253547, #3f5066, #5a6e87, #778da9);
@@ -91,36 +92,56 @@ body {
 
 /* Estilos de la sección de servicios */
 .servicios {
+    margin-top: 12px;
+}
+
+.servicios__container_general {
     display: flex;
+    gap: 12px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 12px;
-
-    margin-top: 12px;
+    flex-wrap: wrap;
 }
 
 .servicios__title {
     color: var(--primary-blue);
     font-size: 2.4rem;
-    margin: 12px;
+    margin: 20px;
     text-align: center;
 }
 
 .section_servicios {
     display: flex;
-    justify-content: space-between;
     gap: 12px;
+    justify-content: space-between;
 
     width: 90%;
+    max-width: 410px;
+    max-height: 200px;
     border: 1px solid var(--light-blue);
     padding: 10px;
 
     border-radius: 10px;
     background-color: var(--off-white);
+    -webkit-box-shadow: 5px 5px 22px -7px rgba(65,90,119,1);
+    -moz-box-shadow: 5px 5px 22px -7px rgba(65,90,119,1);
+    box-shadow: 5px 5px 22px -7px rgba(65,90,119,1);
+}
+
+.servicios__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
 .servicios__container_descripcion h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 6px 0;
     font-size: 1.5rem;
     color: var(--primary-blue);
 }
@@ -128,7 +149,7 @@ body {
 .servicios__container_descripcion p {
     font-size: 1.1rem;
     color: #778DA9;
-    line-height: 18px;
+    line-height: 20px;
 }
 
 .servicios__img {
@@ -154,11 +175,15 @@ body {
     justify-content: space-between;
 
     width: 90%;
+    max-width: 450px;
     padding: 16px;
     border: 1px solid var(--primary-blue);
 
     border-radius: 10px;
     background-color: var(--very-light-blue);
+    -webkit-box-shadow: 5px 5px 12px -7px rgba(65,90,119,1);
+    -moz-box-shadow: 5px 5px 12px -7px rgba(65,90,119,1);
+    box-shadow: 5px 5px 12px -7px rgba(65,90,119,1);
 }
 
 .clientes__img {
@@ -174,7 +199,7 @@ body {
 
 .clientes__opinion {
     line-height: 20px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--primary-blue);
 }
 
@@ -199,8 +224,12 @@ body {
 
 .contacto__mapa {
     width: 80%;
+    max-width: 480px;
     border-radius: 10px;
     border: 1px solid var(--very-light-blue);
+    -webkit-box-shadow: 5px 5px 12px -7px rgba(65,90,119,1);
+    -moz-box-shadow: 5px 5px 12px -7px rgba(65,90,119,1);
+    box-shadow: 5px 5px 12px -7px rgba(65,90,119,1);
 }
 
 .contacto__ubicacion {
@@ -209,6 +238,11 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.servicios__container_general {
+    display: flex;
+    flex-direction: row;
 }
 
 .contacto__container {
@@ -240,6 +274,9 @@ body {
 
     background-color: var(--light-blue);
     border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 12px -7px rgba(65,90,119,1);
+    -moz-box-shadow: 5px 5px 12px -7px rgba(65,90,119,1);
+    box-shadow: 5px 5px 12px -7px rgba(65,90,119,1);
 }
 
 /* Estilos del footer*/
@@ -256,4 +293,75 @@ body {
     font-size: 1.1rem;
 
     background-color: var(--primary-blue);
+}
+
+@media (min-width: 375px) {
+    .servicios__container_descripcion p {
+        font-size: 1.3rem;
+    }
+
+    .servicios__container_descripcion h3 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 425px) {
+    .nav__container_item {
+        font-size: 1.4rem;
+    }
+
+    .servicios__container_descripcion p {
+        font-size: 1.6rem;
+        margin: 12px 0;
+    }
+
+    .servicios__title {
+        font-size: 2.8rem;
+    }
+
+    .clientes__testimonios {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .clientes__opinion {
+        font-size: 1.7rem;
+    }
+
+    .clientes__container {
+        padding: 28px;
+    }
+
+    .contacto__ubicacion {
+        width: 50%;
+        height: 200px;
+    }
+
+    .contacto__mapa {
+        height: 280px;
+    }
+
+    .contacto__container {
+        width: 30%;
+    }
+
+    .contacto__container li {
+        font-size: 1.4rem;
+    }
+
+    .contacto__subtitle {
+        font-size: 2.3rem;
+    }
+
+    .contacto__horario {
+        line-height: 30px;
+    }
+
+    .contacto__p {
+        font-size: 1.7rem;
+    }
+
+    .footer {
+        font-size: 1.4rem;
+    }
 }
